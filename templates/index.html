@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Bienvenue chez LDA Poissonnerie</h2>
+<p>
+Installée au cœur de notre région, <strong>LDA Poissonnerie</strong> est fière de vous proposer des silures d'exception, élevés avec passion en pisciculture. Chaque jour, nous mettons un point d'honneur à vous garantir une fraîcheur irréprochable et une qualité artisanale, issue d’un savoir-faire local.  
+</p>
+<p>
+De l’écloserie à votre assiette, notre engagement est simple : vous offrir un produit sain, savoureux et durable. Découvrez un univers où tradition piscicole et exigence gustative ne font qu’un.
+</p>
+
+
+<!-- Grille d’images des plats -->
+<section class="plat-section plat-large">
+    <h2>Bassin principal de pisciculture</h2>
+    <div class="plat-vertical">
+        <div class="plat-card">
+            <img src="{{ url_for('static', filename='images/plat1.jpg') }}" alt="">
+            <p class="plat-name"></p>
+        </div>
+        <div class="plat-card">
+            <img src="{{ url_for('static', filename='images/plat2.jpg') }}" alt="Station de traitement">
+            <p class="plat-name">Station de traitement</p>
+        </div>
+        <div class="plat-card">
+            <img src="{{ url_for('static', filename='images/plat3.jpg') }}" alt="Agents nourrissant les silures">
+            <p class="plat-name">Agents nourrissant les silures</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Présentation -->
+<section class="presentation">
+    <h2>La passion du Silure, fraîcheur garantie</h2>
+    <p>Chez LDA Poissonnerie, le silure est notre signature. Nous sélectionnons rigoureusement chaque pièce pour vous offrir le meilleur de ce poisson exceptionnel.</p>
+</section>
+
+<!-- Astuce -->
+<section class="astuce">
+    <h3>Le saviez-vous ?</h3>
+    <p>Le silure se cuisine aussi bien à la poêle qu’en papillote. Essayez-le mariné au citron avec un filet d’huile d’olive et des herbes fraîches.</p>
+</section>
+
+<!-- Appel à l'action -->
+<section class="cta">
+    <h3>Découvrez nos filets, morceaux et produits maison</h3>
+    <a class="btn" href="/produits">Voir nos produits</a>
+</section>
+
+{% endblock %}

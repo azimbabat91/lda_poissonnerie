@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>LDA Poissonnerie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+<header>
+<div class="title-logo">
+    <a href="/">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo LDA Poissonnerie">
+    </a>
+</div>
+</header>
+
+<div class="nav-wrapper">
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="/produits">Produits</a>
+        <a href="/apropos">À propos</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</div>
+
+<div class="carousel">
+    <div class="slides">
+        {% for i in range(3) %}
+            <img src="{{ url_for('static', filename='images/poisson1.jpg') }}" alt="Poisson 1">
+            <img src="{{ url_for('static', filename='images/poisson2.jpg') }}" alt="Poisson 2">
+            <img src="{{ url_for('static', filename='images/poisson3.jpg') }}" alt="Poisson 3">
+        {% endfor %}
+    </div>
+</div>
+
+<main class="main-container">
+    <section class="content-left">
+        {% block content %}{% endblock %}
+    </section>
+
+    <aside class="side-panel">
+        <button class="order-btn">Commander maintenant</button>
+        <div class="opening-hours">
+            <h3>Heures d'ouverture</h3>
+            <p>Lundi - Vendredi : 8h - 18h</p>
+            <p>Samedi : 9h - 14h</p>
+            <p>Dimanche : Fermé</p>
+        </div>
+
+        <div class="min-order-box">
+  <i class="fas fa-weight-hanging"></i>
+  <p>Nos produits sont frais et généreux — commandez dès 1 kg !.</p>
+</div>
+        <div class="contact-info">
+            <h3>Contact</h3>
+            <p>Téléphone : +242 06 000 00 00</p>
+            <p>Email : contact@ldapoissonnerie.fr</p>
+        </div>
+    </aside>
+</main>
+
+<footer>
+    <p>© 2025 LDA Poissonnerie — Fraîcheur garantie</p>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="apropos-section">
+    <h2>À propos de LDA Poissonnerie</h2>
+
+    <p>
+        Chez LDA Poissonnerie, nous élevons notre silure à domicile dans des cuves spécialement aménagées, dans un environnement sain et naturel. Nos poissons grandissent sans aucun produit chimique ni additif, garantissant un produit frais, sain et respectueux de la nature.
+    </p>
+
+    <p>
+        Le silure est un poisson d'eau douce exceptionnel, riche en protéines, oméga-3 et vitamines essentielles. Consommer notre silure, c’est faire le choix d’une alimentation saine, bénéfique pour votre cœur, votre cerveau et votre système immunitaire.
+    </p>
+
+
+<!-- Bloc d'images élargi -->
+<div class="apropos-images-wrapper">
+    <div class="apropos-images">
+        <div class="apropos-image">
+            <img src="{{ url_for('static', filename='images/equipe1.jpg') }}" alt="Notre équipe">
+        </div>
+        <div class="apropos-image">
+            <img src="{{ url_for('static', filename='images/poissonnerie2.jpg') }}" alt="Notre boutique">
+        </div>
+    </div>
+</div>
+
+
+
+    <h3>Notre mission</h3>
+    <p>
+        Offrir à nos clients des produits de la mer d'eau douce d'une qualité irréprochable, élevés dans le respect total de l'environnement et de la santé. Notre élevage est géré par des experts qualifiés qui maîtrisent chaque étape, de la croissance du poisson à sa préparation, pour vous assurer fraîcheur et traçabilité.
+    </p>
+
+    <h3>Notre équipe</h3>
+    <p>
+        Composée d’éleveurs passionnés et expérimentés, notre équipe veille au bien-être de chaque poisson et à la qualité constante des produits. Ils mettent leur savoir-faire et leur rigueur au service d’une production saine, durable et responsable.
+    </p>
+
+    <h3>Nos valeurs</h3>
+    <ul>
+        <li><strong>Qualité & Fraîcheur :</strong> Un produit naturel, élevé sans produit chimique.</li>
+        <li><strong>Respect de l'environnement :</strong> Élevage durable et maîtrisé.</li>
+        <li><strong>Transparence :</strong> Traçabilité complète du poisson de l’élevage à votre assiette.</li>
+        <li><strong>Santé :</strong> Promouvoir une alimentation saine grâce aux bienfaits du silure.</li>
+        <li><strong>Service client :</strong> Vous accompagner avec conseils et écoute.</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>
+        LDA Poissonnerie, c’est bien plus qu’un simple élevage : c’est une passion pour un produit sain et savoureux, un engagement pour votre santé, et la volonté de partager avec vous le meilleur du silure, élevé localement et naturellement.
+    </p>
+</section>
+{% endblock %}
