@@ -5,6 +5,7 @@ body {
     color: #333;
 }
 
+
 /* Titre principal */
 header {
     background: #0b3c5d; /* fond bleu */
@@ -48,7 +49,7 @@ nav a:hover {
 }
 
 .carousel {
-    width: 190%;
+    width: 100%;
     overflow: hidden;
     background-color: #ffffff;
     padding: 15px 0;
@@ -704,6 +705,7 @@ img {
   padding: 10px 0;
 }
 
+
 .plat-vertical {
   width: 100%;
   display: flex;
@@ -730,4 +732,14 @@ img {
   padding: 15px;
   font-weight: bold;
   color: #0b3c5d;
+}
+
+@media (max-width: 600px) {
+  .plat-large {
+    width: 100%;
+    margin-left: 0;
+  }
+  body {
+    font-size: 0.95rem;
+  }
 }
