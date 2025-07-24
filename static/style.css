@@ -184,19 +184,37 @@ footer {
     gap: 25px;
 }
 
-/* Responsive : tablette */
+.plat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur desktop */
+    gap: 20px; /* espace entre les éléments */
+    padding: 0 20px; /* un peu d’air sur les côtés */
+    box-sizing: border-box; /* pour que le padding soit inclus dans la largeur */
+}
+
+/* Tablette : 2 colonnes */
 @media (max-width: 992px) {
     .plat-grid {
         grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
     }
 }
 
-/* Responsive : téléphone */
+/* Téléphone : 1 colonne */
 @media (max-width: 600px) {
     .plat-grid {
         grid-template-columns: 1fr;
+        padding: 0 10px;
     }
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 
 .plat-card {
     background: #fff;
